@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1073254897824",
+    "project_id": "project-4259959400770840722",
+    "storage_bucket": "project-4259959400770840722.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073254897824:android:0c625601d30555d61451c5",
+        "android_client_info": {
+          "package_name": "cat.institutmarianao.miaplicacionconfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC010vBm4Va3WLXmsqXclHL0aKb-iPjzcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073254897824:android:6aa60477772c4c101451c5",
+        "android_client_info": {
+          "package_name": "cat.institutmarianao.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC010vBm4Va3WLXmsqXclHL0aKb-iPjzcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
