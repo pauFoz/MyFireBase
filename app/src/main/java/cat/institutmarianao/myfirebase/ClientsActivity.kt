@@ -27,7 +27,8 @@ class ClientsActivity : AppCompatActivity() {
         val addButton = findViewById<Button>(R.id.addButton)
 
         addButton.setOnClickListener {
-            val client = hashMapOf("name" to nameEditText, "email" to emailEditText, "age" to ageEditText)
+
+            val client = hashMapOf("name" to nameEditText.text.toString(), "email" to emailEditText.text.toString(), "age" to ageEditText.text.toString())
 
             db.collection("clients").add(client).addOnSuccessListener { documentReference ->
                 Log.d("Firestore", "Document added with ID: ${documentReference.id}")
