@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:1073254897824:android:0c625601d30555d61451c5",
         "android_client_info": {
-          "package_name": "cat.institutmarianao.miaplicacionconfirebase"
+          "package_name": "cat.institutmarianao.mifirebase"
         }
       },
       "oauth_client": [],
@@ -28,7 +28,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:1073254897824:android:6aa60477772c4c101451c5",
         "android_client_info": {
-          "package_name": "cat.institutmarianao.myapplication"
+          "package_name": "cat.institutmarianao.myfirebase"
         }
       },
       "oauth_client": [],

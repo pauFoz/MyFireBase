@@ -10,22 +10,33 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.Firebase
+import com.google.firebase.firestore.firestore
 
 
 class ClientsActivity : AppCompatActivity() {
 
+    private val db = Firebase.firestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_clients)
 
-        val emailEditText = findViewById<EditText>(R.id.emailEditText)
         val nameEditText = findViewById<EditText>(R.id.nameEditText)
+        val emailEditText = findViewById<EditText>(R.id.emailEditText)
         val ageEditText = findViewById<EditText>(R.id.ageEditText)
-        val saveUserButton = findViewById<Button>(R.id.saveUserButton)
+        val addButton = findViewById<Button>(R.id.addButton)
 
-    val
+        addButton.setOnClickListener {
+            val client = hashMapOf("name" to nameEditText, "email" to emailEditText, "age" to ageEditText)
+
+            db.collection("clients").add(client).addOnSuccessListener { documentReference ->
+                Log.d("Firestore", "Document added with ID: ${documentReference.id}")
+            }   .addOnFailureListener { e ->
+                Log.w("Firestore", "Error adding document", e)
+            }
+
+        }
+
 
 
 
