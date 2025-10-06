@@ -38,4 +38,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add new client" />
+    <TextView
+        android:id="@+id/firestoreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Firestore clients"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/clientsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>
